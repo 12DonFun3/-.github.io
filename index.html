@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/index.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+    </style>    
+  <title>網頁程式設計 課程作品-第六組-首頁</title>
+  <link rel="icon" href="img/logo.ico">
+  
+</head>
+<body>
+  <!-- 頁首 start -->
+  
+  <header>
+    <div id="header_menu">
+      <div id="header_logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo" width="40"></a>
+      </div>
+  
+      <nav class="header_nav">      
+        <div class="dropdown">
+          <button>品牌介紹</button>
+          <div class="dropdown-content">
+            <a href="webPage/story.html"><li>品牌故事</li></a>
+            <a href="webPage/ingredients.html"><li>選用食材</li></a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button>餐點列表</button>
+          <div class="dropdown-content">
+            <a href="webPage/combo.html"><li>套餐</li></a>
+            <a href="webPage/just.html"><li>單點</li></a>
+            <a href="webPage/drinks.html"><li>飲料</li></a>
+            <a href="webPage/dessert.html"><li>點心</li></a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button>聯絡我們</button>
+          <div class="dropdown-content">
+            <a href="webPage/about.html"><li>聯絡資訊</li></a>
+            <a href="webPage/digital.html"><li>數位服務</li></a>
+          </div>
+        </div>
+      </nav>
+    </div>   
+  </header>
+  <!-- 頁首 end -->
+
+
+  <!-- 橫幅區 start -->
+  <div id="banner">
+    <div class="banner_txt">
+      <h1>網頁程式設計 第六組作品</h1>
+      <p1>主題：類麥當勞介紹網站</p1>
+    </div>
+  </div>
+  <!-- 橫幅區 end -->
+
+
+  <!-- 活動資訊區 start -->
+  <div id="event">
+    <h1>活動資訊</h1>
+    <div id="news">
+      <button onclick="showPrevious()"><img src="img/arrow.png" alt="Previous" style="transform: scaleX(-1)"></button>
+
+      <div class="news_contents">
+        <div id="news1" class="news_item">
+          <img src="img/_banner.png" alt="圖片1">
+          <p>
+            <h2>活動1</h2>
+            活動描述<br>
+            活動描述活動描述<br>
+            活動描述活動描述活動描述<br>
+            活動描述活動描述
+          </p>
+        </div>
+
+        <div id="news2" class="news_item">
+          <img src="img/_banner.png" alt="圖片1">
+          <p>
+            <h2>活動2</h2>
+            活動描述<br>
+            活動描述活動描述<br>
+            活動描述活動描述活動描述<br>
+            活動描述活動描述
+          </p>
+        </div>
+
+        <div id="news3" class="news_item">
+          <img src="img/_banner.png" alt="圖片1">
+          <p>
+            <h2>活動3</h2>
+            活動描述<br>
+            活動描述活動描述<br>
+            活動描述活動描述活動描述<br>
+            活動描述活動描述
+          </p>
+        </div>
+
+        <div id="news4" class="news_item">
+          <img src="img/_banner.png" alt="圖片1">
+          <p>
+            <h2>活動4</h2>
+            活動描述<br>
+            活動描述活動描述<br>
+            活動描述活動描述活動描述<br>
+            活動描述活動描述
+          </p>
+        </div>
+
+        <div id="news5" class="news_item">
+          <img src="img/_banner.png" alt="圖片1">
+          <p>
+            <h2>活動5</h2>
+            活動描述<br>
+            活動描述活動描述<br>
+            活動描述活動描述活動描述<br>
+            活動描述活動描述
+          </p>
+        </div>
+      </div>
+
+      <button onclick="showNext()"><img src="img/arrow.png" alt="Next"></button>
+    </div>
+  </div>
+  <!-- 活動資訊區 end -->
+
+
+  <!-- 介紹區 start -->
+  <div id="story">
+    <h1>品牌故事</h1>
+    <p1>創始於1834，最初只是一位老人推著的流動餐車。她希望能讓餓肚子的工人們填飽肚子，<br>
+      我們將延續她的精神，繼續努力，為您服務。</p1><br>
+      <a href="webPage/story.html">
+        <button>了解更多</button>
+      </a>
+  </div>
+  <!-- 介紹區 end -->
+
+
+  <!-- 餐點區 start -->
+  <div id="recommended">
+    <h1>推薦套餐</h1>
+    <div id="combo">
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐1</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐2</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐3</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐4</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐5</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+
+      <div class="combo_img">
+        <img src="img/soyaburger.jpg" alt="圖片1">
+        <h3>套餐6</h3>
+        <p>套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明套餐說明</p>
+      </div>
+    </div>
+    <a href="webPage/combo.html"><button>了解更多</button></a>  
+  </div>
+  <!-- 餐點區 end -->
+
+
+  <!-- 頁尾 start -->
+  <footer>
+    <p>世新大學 網頁程式設計課程 第六組作品 | 更新日期: 2023-11-29</p>
+  </footer>
+  <!-- 頁尾 end -->
+
+
+  <!-- 活動資訊切換js start -->
+  <script>
+    let currentIndex = 0;
+    const totalItems = 5;
+    const newsItems = document.querySelectorAll('.news_item');
+
+    function showNext() {
+      if (currentIndex < totalItems - 1) {
+        currentIndex++;
+        updateTransform();
+      }
+    }
+
+    function showPrevious() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateTransform();
+      }
+    }
+
+    function updateTransform() {
+      const translateValue = currentIndex * -100 + '%';
+      newsItems.forEach((item, index) => {
+        item.style.transform = 'translateX(' + (index * 100 - currentIndex * 100) + '%)';
+      });
+    }
+  </script>
+   <!-- 活動資訊切換js end -->
+
+</body>
+</html>
